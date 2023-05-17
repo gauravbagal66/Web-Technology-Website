@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Review</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Event Review</h1>
+    </header>
+    <section class="review-form">
+      <h2>Write a Review</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="" disabled selected>Select rating</option>
+          <option value="1">1 Star</option>
+          <option value="2">2 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="5">5 Stars</option>
+        </select>
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+    <section class="reviews">
+      <h2>Customer Reviews</h2>
+      <ul>
+        <li>
+          <h3>John Doe</h3>
+          <p class="rating">4 Stars</p>
+          <p class="review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis mauris ac justo efficitur tincidunt. Nulla eu sapien a nisl dapibus commodo.</p>
+        </li>
+        <li>
+          <h3>Jane Smith</h3>
+          <p class="rating">5 Stars</p>
+          <p class="review">Nullam sed sapien ac odio iaculis convallis at vel nulla. Fusce maximus, est non placerat pellentesque, magna nibh rhoncus purus, vel vestibulum quam nisl quis enim.</p>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
